@@ -1,6 +1,8 @@
 <template>
     <div class="ww-loader" :style="cssVariable">
-        <div v-if="content.spinner === 'plane'" class="sk-plane"></div>
+        <div v-if="content.spinner === 'classic'" class="sk-classic"></div>
+
+        <div v-else-if="content.spinner === 'plane'" class="sk-plane"></div>
 
         <div v-else-if="content.spinner === 'chase'" class="sk-chase">
             <div class="sk-chase-dot"></div>

@@ -2,6 +2,22 @@
     --sk-size: 40px;
     --sk-color: #333;
 }
+.sk-classic {
+    width: var(--sk-size);
+    height: var(--sk-size);
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top: 3px solid var(--sk-color);
+    border-radius: 50%;
+    animation: sk-classic 1s linear infinite;
+}
+@keyframes sk-classic {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .sk-center {
     margin: auto;
 }
@@ -37,7 +53,7 @@
     animation: sk-chase-dot 2s infinite ease-in-out both;
 }
 .sk-chase-dot:before {
-    content: '';
+    content: "";
     display: block;
     width: 25%;
     height: 25%;
@@ -194,7 +210,8 @@
     height: 25%;
     background-color: var(--sk-color);
     border-radius: 50%;
-    animation: sk-flow 1.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite both;
+    animation: sk-flow 1.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite
+        both;
 }
 .sk-flow-dot:nth-child(1) {
     animation-delay: -0.3s;
@@ -262,7 +279,7 @@
     top: 0;
 }
 .sk-circle-dot:before {
-    content: '';
+    content: "";
     display: block;
     width: 15%;
     height: 15%;
@@ -359,7 +376,7 @@
     top: 0;
 }
 .sk-circle-fade-dot:before {
-    content: '';
+    content: "";
     display: block;
     width: 15%;
     height: 15%;
@@ -507,7 +524,7 @@
     transform: scale(1.1);
 }
 .sk-fold-cube:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -578,16 +595,20 @@
         transform: rotate(0);
     }
     25% {
-        transform: translateX(var(--sk-wander-distance)) rotate(-90deg) scale(0.6);
+        transform: translateX(var(--sk-wander-distance)) rotate(-90deg)
+            scale(0.6);
     }
     50% {
-        transform: translateX(var(--sk-wander-distance)) translateY(var(--sk-wander-distance)) rotate(-179deg);
+        transform: translateX(var(--sk-wander-distance))
+            translateY(var(--sk-wander-distance)) rotate(-179deg);
     }
     50.1% {
-        transform: translateX(var(--sk-wander-distance)) translateY(var(--sk-wander-distance)) rotate(-180deg);
+        transform: translateX(var(--sk-wander-distance))
+            translateY(var(--sk-wander-distance)) rotate(-180deg);
     }
     75% {
-        transform: translateX(0) translateY(var(--sk-wander-distance)) rotate(-270deg) scale(0.6);
+        transform: translateX(0) translateY(var(--sk-wander-distance))
+            rotate(-270deg) scale(0.6);
     }
     100% {
         transform: rotate(-360deg);
