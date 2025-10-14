@@ -5,10 +5,10 @@
 .sk-classic {
     width: var(--sk-size);
     height: var(--sk-size);
-    border: 3px solid rgba(0, 0, 0, 0.1);
-    border-top: 3px solid var(--sk-color);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--sk-color);
     border-radius: 50%;
-    animation: sk-classic 1s linear infinite;
+    animation: sk-classic 0.75s linear infinite;
 }
 @keyframes sk-classic {
     0% {
