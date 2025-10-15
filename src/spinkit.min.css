@@ -1,7 +1,7 @@
 :root {
     --sk-size: 40px;
     --sk-color: #333;
-    --sk-duration: 0.6;
+    --sk-duration: 0.6s;
 }
 .sk-classic {
     width: var(--sk-size);
@@ -9,7 +9,7 @@
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-top: 2px solid var(--sk-color);
     border-radius: 50%;
-    animation: sk-classic var(--sk-duration) s linear infinite;
+    animation: sk-classic var(--sk-duration, 0.6s) linear infinite;
 }
 @keyframes sk-classic {
     0% {

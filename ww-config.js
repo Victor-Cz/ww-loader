@@ -72,7 +72,7 @@ export default {
             responsive: true,
             states: true,
             classes: true,
-            hidden: (content) => content.spinner === "classic",
+            hidden: (content) => content.spinner !== "classic",
         },
     },
 };
