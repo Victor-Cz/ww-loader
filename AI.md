@@ -6,13 +6,15 @@ keywords: loading spinner, css animations, spinkit library, spinner styles, load
 
 #### ww-loader
 
-***Purpose:*** Renders various loading spinner animations to indicate loading or processing states within an application.
+**_Purpose:_** Renders various loading spinner animations to indicate loading or processing states within an application.
 
-***Features:***
-- Uses spinkit library for spinner animations
-- CSS-based animations for smooth performance
+**_Features:_**
 
-***Properties:***
-- spinner: 'plane' | 'chase' | 'bounce' | 'wave' | 'pulse' | 'flow' | 'swing' | 'circle' | 'circle-fade' | 'grid' | 'fold' | 'wander' - Type of spinner animation. Default: 'plane'
-- color: string - Spinner color.
-- size: string - Spinner size in pixels, must include 'px' unit suffix (only 'px' is supported).
+-   Uses spinkit library for spinner animations
+-   CSS-based animations for smooth performance
+
+**_Properties:_**
+
+-   spinner: 'classic' | 'plane' | 'chase' | 'bounce' | 'wave' | 'pulse' | 'flow' | 'swing' | 'circle' | 'circle-fade' | 'grid' | 'fold' | 'wander' - Type of spinner animation. Default: 'plane'
+-   color: string - Spinner color.
+-   size: string - Spinner size in pixels, must include 'px' unit suffix (only 'px' is supported).

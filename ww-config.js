@@ -57,5 +57,22 @@ export default {
             states: true,
             classes: true,
         },
+        duration: {
+            label: {
+                en: "Duration",
+            },
+            type: "Number",
+            options: {
+                min: 0,
+                max: 1,
+                step: 0.01,
+            },
+            defaultValue: 0.6,
+            bindable: true,
+            responsive: true,
+            states: true,
+            classes: true,
+            hidden: (content) => content.spinner === "classic",
+        },
     },
 };

@@ -108,6 +108,7 @@ export default {
             return {
                 '--sk-color': this.content.color,
                 '--sk-size': this.content.size,
+                '--sk-duration': this.content.duration,
             };
         },
     },
